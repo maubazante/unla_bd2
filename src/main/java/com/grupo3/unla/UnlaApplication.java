@@ -4,15 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.grupo3.unla.model.Cliente;
 import com.grupo3.unla.model.Domicilio;
 import com.grupo3.unla.model.Empleado;
 import com.grupo3.unla.model.ObraSocial;
 
+import com.grupo3.unla.model.Laboratorio;
+import com.grupo3.unla.model.Producto;
+
 
 public class UnlaApplication {
 	
-	private static Gson gson = new Gson();
+	private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 	public static void main(String[] args) {
 		// GENERAR CLIENTES
@@ -39,6 +43,54 @@ public class UnlaApplication {
 		clientes.add(cliente_5);
 		String json = gson.toJson(clientes);
 		System.out.print(json);
+		
+		
+		//GENERAR PRODUCTOS
+		
+		 Producto producto_1= new Producto(1,false,"Versace Eros",45000,new Laboratorio(1,"LabChemical")); 
+		 Producto producto_2= new Producto(2,true,"ibuprofeno 600",1000,new Laboratorio(2,"Biotenk")); 
+		 Producto producto_3= new Producto(3,false,"BODY MIST AQUA",20000,new Laboratorio(3,"Wels SRL")); 
+		 Producto producto_4= new Producto(4,true,"enalapril",5000,new Laboratorio(4,"Elea")); 
+		 Producto producto_5= new Producto(5,false,"Trekking",26000,new Laboratorio(5,"Aromas SA")); 
+		
+		 //----------------Json lista de empleados 
+	      List <Empleado> empleados =new ArrayList<Empleado>();
+	      empleados.add(empleado_1);
+	      empleados.add(empleado_2);
+	      empleados.add(empleado_3);
+	      empleados.add(empleado_4);
+	      empleados.add(empleado_5);
+			
+		 String jsonEmpleados=gson.toJson(empleados); 
+			
+	      System.out.println("\n\nLISTA DE EMPLEADOS");
+		  System.out.print(jsonEmpleados);
+			
+		//Json lista de productos
+		 List <Producto> productos=new ArrayList<Producto>(); 
+		 productos.add(producto_1);
+		 productos.add(producto_2);
+		 productos.add(producto_3);
+		 productos.add(producto_4);
+		 productos.add(producto_5); 
+			
+		 String jsonProductos=gson.toJson(productos); 
+			
+		 System.out.println("\n\nLISTA DE PRODUCTOS");
+		 System.out.print(jsonProductos);
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
