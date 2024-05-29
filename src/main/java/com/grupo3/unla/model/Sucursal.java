@@ -5,15 +5,13 @@ import java.util.List;
 public class Sucursal {
 	public int id;
 	public String nombre;
-	public Venta venta;
 	public List<Empleado> empleados;
 	public Empleado encargado;
 	
-	public Sucursal(int id, String nombre, Venta venta, List<Empleado> empleados, Empleado encargado) {
+	public Sucursal(int id, String nombre, List<Empleado> empleados, Empleado encargado) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		this.venta = venta;
 		this.empleados = empleados;
 		this.encargado = encargado;
 	}
@@ -30,12 +28,7 @@ public class Sucursal {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public Venta getVenta() {
-		return venta;
-	}
-	public void setVenta(Venta venta) {
-		this.venta = venta;
-	}
+
 	public List<Empleado> getEmpleados() {
 		return empleados;
 	}

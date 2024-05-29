@@ -1,6 +1,7 @@
 package com.grupo3.unla.model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import com.grupo3.unla.utils.MathHelper;
 
@@ -9,15 +10,18 @@ public class Venta {
 	public String ticket;
 	public Empleado empleado;
 	public Cliente cliente;
-	public FormaDePago forCobro;
 	public Sucursal sucursal;
+	public String formaDePago;
+	public double total;
+	public List<Producto> productos;
 	
-	public Venta(LocalDate fecha, Empleado empleado, Cliente cliente, FormaDePago forCobro) {
+	public Venta(LocalDate fecha, Empleado empleado, String formaDePago, Cliente cliente, List<Producto> productos, Sucursal sucursal) {
 		super();
 		this.fecha = fecha;
 		this.empleado = empleado;
 		this.cliente = cliente;
-		this.forCobro = forCobro;
+		this.formaDePago = formaDePago;
+		this.total = getTotalVenta();
 		this.ticket = MathHelper.generarNumeroTicket(sucursal);
 	}
 	
@@ -45,10 +49,29 @@ public class Venta {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
-	public FormaDePago getForCobro() {
-		return forCobro;
+
+	public Sucursal getSucursal() {
+		return sucursal;
 	}
-	public void setForCobro(FormaDePago forCobro) {
-		this.forCobro = forCobro;
+
+	public void setSucursal(Sucursal sucursal) {
+		this.sucursal = sucursal;
+	}
+
+	public List<Producto> getProductos() {
+		return productos;
+	}
+
+	public void setProductos(List<Producto> productos) {
+		this.productos = productos;
+	}
+	
+	private double getTotalVenta() {
+		float total = 0;
+		if(this.productos == null) return total;
+		for(Producto prodIt: this.productos) {
+			total += prodIt.getPrecio();
+		}
+		return total;
 	}
 }
