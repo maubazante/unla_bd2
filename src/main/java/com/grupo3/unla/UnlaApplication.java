@@ -24,7 +24,7 @@ public class UnlaApplication {
 	private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 	public static void main(String[] args) {
-		
+
 		// GENERAR CLIENTES
 		Cliente cliente_1 = new Cliente(11111111, "JUAN", "ROMAN",
 				new Domicilio(1, "12", "LUZURIAGA", "TEMPERLEY", "BS AS"), new ObraSocial(1, "OSDE"), "08001213");
@@ -66,7 +66,6 @@ public class UnlaApplication {
 				new ObraSocial(2, "OSECAC"), new Domicilio(13, "144", "THEQUIAC", "LUJAN", "BS AS"));
 		Empleado empleado_9 = new Empleado(Long.valueOf("26746725653"), 74672565, "FIONA", "SURAN", "08001645",
 				new ObraSocial(2, "OSECAC"), new Domicilio(14, "2322", "AV. ESPORA", "BURZACO", "BS AS"));
-	
 
 		// GENERAR PRODUCTOS
 
@@ -93,13 +92,13 @@ public class UnlaApplication {
 		empleadosLanus.add(empleado_2);
 		empleadosLanus.add(empleado_3);
 		Sucursal sucursal_lanus = new Sucursal(2, "LANUS", empleadosLanus, empleado_3);
-		
+
 		List<Empleado> empleadosBanfield = new ArrayList<>();
 		empleadosBanfield.add(empleado_7);
 		empleadosBanfield.add(empleado_8);
 		empleadosBanfield.add(empleado_9);
 		Sucursal sucursal_banfield = new Sucursal(3, "BANFIELD", empleadosBanfield, empleado_9);
-				
+
 		// VENTA N1
 		List<Producto> productos_venta1 = new ArrayList<>();
 		productos_venta1.add(producto_4);
@@ -147,7 +146,7 @@ public class UnlaApplication {
 		productos_venta6.add(producto_4);
 		Venta venta_6 = new Venta(LocalDate.now(), empleado_4, PAGO_CREDITO, cliente_3, productos_venta6,
 				sucursal_lomas);
-		
+
 		// VENTA N7
 		List<Producto> productos_venta7 = new ArrayList<>();
 		productos_venta7.add(producto_1);
@@ -155,7 +154,7 @@ public class UnlaApplication {
 		productos_venta7.add(producto_4);
 		Venta venta_7 = new Venta(LocalDate.now(), empleado_1, PAGO_EFECTIVO, cliente_3, productos_venta7,
 				sucursal_lanus);
-		
+
 		// VENTA N8
 		List<Producto> productos_venta8 = new ArrayList<>();
 		productos_venta8.add(producto_2);
@@ -163,7 +162,7 @@ public class UnlaApplication {
 		productos_venta8.add(producto_5);
 		Venta venta_8 = new Venta(LocalDate.now(), empleado_2, PAGO_DEBITO, cliente_1, productos_venta8,
 				sucursal_lanus);
-		
+
 		// VENTA N9
 		List<Producto> productos_venta9 = new ArrayList<>();
 		productos_venta9.add(producto_7);
@@ -171,7 +170,7 @@ public class UnlaApplication {
 		productos_venta9.add(producto_9);
 		Venta venta_9 = new Venta(LocalDate.now(), empleado_3, PAGO_DEBITO, cliente_8, productos_venta9,
 				sucursal_lanus);
-		
+
 		// VENTA N10
 		List<Producto> productos_venta10 = new ArrayList<>();
 		productos_venta10.add(producto_1);
@@ -179,7 +178,7 @@ public class UnlaApplication {
 		productos_venta10.add(producto_8);
 		Venta venta_10 = new Venta(LocalDate.now(), empleado_1, PAGO_CREDITO, cliente_6, productos_venta10,
 				sucursal_lanus);
-		
+
 		// VENTA N11
 		List<Producto> productos_venta11 = new ArrayList<>();
 		productos_venta11.add(producto_3);
@@ -187,7 +186,7 @@ public class UnlaApplication {
 		productos_venta11.add(producto_8);
 		Venta venta_11 = new Venta(LocalDate.now(), empleado_2, PAGO_EFECTIVO, cliente_7, productos_venta11,
 				sucursal_lanus);
-		
+
 		// VENTA N12
 		List<Producto> productos_venta12 = new ArrayList<>();
 		productos_venta12.add(producto_4);
@@ -195,7 +194,7 @@ public class UnlaApplication {
 		productos_venta12.add(producto_7);
 		Venta venta_12 = new Venta(LocalDate.now(), empleado_2, PAGO_DEBITO, cliente_3, productos_venta12,
 				sucursal_lanus);
-		
+
 		// VENTA N13
 		List<Producto> productos_venta13 = new ArrayList<>();
 		productos_venta13.add(producto_1);
@@ -203,7 +202,7 @@ public class UnlaApplication {
 		productos_venta13.add(producto_7);
 		Venta venta_13 = new Venta(LocalDate.now(), empleado_3, PAGO_CREDITO, cliente_9, productos_venta13,
 				sucursal_lanus);
-		
+
 		// VENTA N14
 		List<Producto> productos_venta14 = new ArrayList<>();
 		productos_venta14.add(producto_1);
@@ -211,7 +210,7 @@ public class UnlaApplication {
 		productos_venta14.add(producto_10);
 		Venta venta_14 = new Venta(LocalDate.now(), empleado_4, PAGO_CREDITO, cliente_2, productos_venta14,
 				sucursal_lomas);
-		
+
 		// VENTA N15
 		List<Producto> productos_venta15 = new ArrayList<>();
 		productos_venta15.add(producto_3);
@@ -219,7 +218,7 @@ public class UnlaApplication {
 		productos_venta15.add(producto_10);
 		Venta venta_15 = new Venta(LocalDate.now(), empleado_5, PAGO_EFECTIVO, cliente_5, productos_venta15,
 				sucursal_lomas);
-		
+
 		// VENTA N16
 		List<Producto> productos_venta16 = new ArrayList<>();
 		productos_venta16.add(producto_6);
@@ -227,8 +226,109 @@ public class UnlaApplication {
 		productos_venta16.add(producto_8);
 		Venta venta_16 = new Venta(LocalDate.now(), empleado_6, PAGO_EFECTIVO, cliente_6, productos_venta16,
 				sucursal_lomas);
+
+		// VENTA N17
+		List<Producto> productos_venta17 = new ArrayList<>();
+		productos_venta17.add(producto_1);
+		productos_venta17.add(producto_5);
+		productos_venta17.add(producto_10);
+		Venta venta_17 = new Venta(LocalDate.now(), empleado_4, PAGO_EFECTIVO, cliente_10, productos_venta17,
+				sucursal_lomas);
+		// VENTA N18
+		List<Producto> productos_venta18 = new ArrayList<>();
+		productos_venta18.add(producto_3);
+		productos_venta18.add(producto_2);
+		productos_venta18.add(producto_6);
+		Venta venta_18 = new Venta(LocalDate.now(), empleado_4, PAGO_CREDITO, cliente_5, productos_venta18,
+				sucursal_lomas);
+		// VENTA N19
+		List<Producto> productos_venta19 = new ArrayList<>();
+		productos_venta19.add(producto_6);
+		productos_venta19.add(producto_5);
+		productos_venta19.add(producto_4);
+		Venta venta_19 = new Venta(LocalDate.now(), empleado_6, PAGO_DEBITO, cliente_1, productos_venta19,
+				sucursal_lomas);
+		// VENTA N20
+		List<Producto> productos_venta20 = new ArrayList<>();
+		productos_venta20.add(producto_9);
+		productos_venta20.add(producto_7);
+		productos_venta20.add(producto_1);
+		Venta venta_20 = new Venta(LocalDate.now(), empleado_5, PAGO_DEBITO, cliente_3, productos_venta20,
+				sucursal_lomas);
+
+		// VENTA N21
+		List<Producto> productos_venta21 = new ArrayList<>();
+		productos_venta21.add(producto_6);
+		productos_venta21.add(producto_2);
+		productos_venta21.add(producto_10);
+		Venta venta_21 = new Venta(LocalDate.now(), empleado_8, PAGO_EFECTIVO, cliente_8, productos_venta21,
+				sucursal_banfield);
+		// VENTA N22
+		List<Producto> productos_venta22 = new ArrayList<>();
+		productos_venta22.add(producto_4);
+		productos_venta22.add(producto_3);
+		productos_venta22.add(producto_1);
+		Venta venta_22 = new Venta(LocalDate.now(), empleado_7, PAGO_EFECTIVO, cliente_2, productos_venta22,
+				sucursal_banfield);
+		// VENTA N23
+		List<Producto> productos_venta23 = new ArrayList<>();
+		productos_venta23.add(producto_5);
+		productos_venta23.add(producto_8);
+		productos_venta23.add(producto_10);
+		Venta venta_23 = new Venta(LocalDate.now(), empleado_8, PAGO_CREDITO, cliente_10, productos_venta23,
+				sucursal_banfield);
+		// VENTA N24
+		List<Producto> productos_venta24 = new ArrayList<>();
+		productos_venta24.add(producto_3);
+		productos_venta24.add(producto_10);
+		productos_venta24.add(producto_6);
+		Venta venta_24 = new Venta(LocalDate.now(), empleado_9, PAGO_DEBITO, cliente_7, productos_venta24,
+				sucursal_banfield);
+		// VENTA N25
+		List<Producto> productos_venta25 = new ArrayList<>();
+		productos_venta25.add(producto_7);
+		productos_venta25.add(producto_8);
+		productos_venta25.add(producto_2);
+		Venta venta_25 = new Venta(LocalDate.now(), empleado_8, PAGO_CREDITO, cliente_4, productos_venta25,
+				sucursal_banfield);
+		// VENTA N26
+		List<Producto> productos_venta26 = new ArrayList<>();
+		productos_venta26.add(producto_1);
+		productos_venta26.add(producto_3);
+		productos_venta26.add(producto_5);
+		Venta venta_26 = new Venta(LocalDate.now(), empleado_7, PAGO_EFECTIVO, cliente_5, productos_venta26,
+				sucursal_banfield);
+		// VENTA N27
+		List<Producto> productos_venta27 = new ArrayList<>();
+		productos_venta27.add(producto_6);
+		productos_venta27.add(producto_9);
+		productos_venta27.add(producto_10);
+		Venta venta_27 = new Venta(LocalDate.now(), empleado_9, PAGO_EFECTIVO, cliente_9, productos_venta27,
+				sucursal_banfield);
+		// VENTA N28
+		List<Producto> productos_venta28 = new ArrayList<>();
+		productos_venta28.add(producto_4);
+		productos_venta28.add(producto_7);
+		productos_venta28.add(producto_1);
+		Venta venta_28 = new Venta(LocalDate.now(), empleado_8, PAGO_CREDITO, cliente_1, productos_venta28,
+				sucursal_banfield);
+		// VENTA N29
+		List<Producto> productos_venta29 = new ArrayList<>();
+		productos_venta29.add(producto_10);
+		productos_venta29.add(producto_9);
+		productos_venta29.add(producto_8);
+		Venta venta_29 = new Venta(LocalDate.now(), empleado_7, PAGO_DEBITO, cliente_10, productos_venta29,
+				sucursal_banfield);
+		// VENTA N30
+		List<Producto> productos_venta30 = new ArrayList<>();
+		productos_venta30.add(producto_4);
+		productos_venta30.add(producto_3);
+		productos_venta30.add(producto_7);
+		Venta venta_30 = new Venta(LocalDate.now(), empleado_9, PAGO_CREDITO, cliente_6, productos_venta30,
+				sucursal_banfield);
+
 		/* TODO: ---------> GENERAR 30 VENTAS POR SUCURSAL <----------- */
-		
+
 		System.out.println("----------------VENTA 1----------------");
 		System.out.println(gson.toJson(venta_1));
 		System.out.println("----------------VENTA 2----------------");
@@ -261,6 +361,34 @@ public class UnlaApplication {
 		System.out.println(gson.toJson(venta_15));
 		System.out.println("----------------VENTA 16----------------");
 		System.out.println(gson.toJson(venta_16));
+		System.out.println("----------------VENTA 17----------------");
+		System.out.println(gson.toJson(venta_17));
+		System.out.println("----------------VENTA 18----------------");
+		System.out.println(gson.toJson(venta_18));
+		System.out.println("----------------VENTA 19----------------");
+		System.out.println(gson.toJson(venta_19));
+		System.out.println("----------------VENTA 20----------------");
+		System.out.println(gson.toJson(venta_20));
+		System.out.println("----------------VENTA 21----------------");
+		System.out.println(gson.toJson(venta_21));
+		System.out.println("----------------VENTA 22----------------");
+		System.out.println(gson.toJson(venta_22));
+		System.out.println("----------------VENTA 23----------------");
+		System.out.println(gson.toJson(venta_23));
+		System.out.println("----------------VENTA 24----------------");
+		System.out.println(gson.toJson(venta_24));
+		System.out.println("----------------VENTA 25----------------");
+		System.out.println(gson.toJson(venta_25));
+		System.out.println("----------------VENTA 26----------------");
+		System.out.println(gson.toJson(venta_26));
+		System.out.println("----------------VENTA 27----------------");
+		System.out.println(gson.toJson(venta_27));
+		System.out.println("----------------VENTA 28----------------");
+		System.out.println(gson.toJson(venta_28));
+		System.out.println("----------------VENTA 29----------------");
+		System.out.println(gson.toJson(venta_29));
+		System.out.println("----------------VENTA 30----------------");
+		System.out.println(gson.toJson(venta_30));
 	}
 
 }
