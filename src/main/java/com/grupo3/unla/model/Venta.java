@@ -21,6 +21,7 @@ public class Venta {
 		this.empleado = empleado;
 		this.cliente = cliente;
 		this.formaDePago = formaDePago;
+		this.productos = productos;
 		this.total = getTotalVenta();
 		this.ticket = MathHelper.generarNumeroTicket(sucursal);
 	}

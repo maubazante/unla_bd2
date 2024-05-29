@@ -71,41 +71,41 @@ public class UnlaApplication {
 
 		// VENTA N1
 		List<Producto> productos_venta1 = new ArrayList<>();
-		productos_venta1.add(producto_1);
-		productos_venta1.add(producto_2);
+		productos_venta1.add(producto_4);
+		productos_venta1.add(producto_5);
 		productos_venta1.add(producto_3);
 		Venta venta_1 = new Venta(LocalDate.now(), empleado_1, PAGO_EFECTIVO, cliente_1, productos_venta1,
 				sucursal_lanus);
 
 		// VENTA N2
 		List<Producto> productos_venta2 = new ArrayList<>();
-		productos_venta1.add(producto_1);
-		productos_venta1.add(producto_2);
-		productos_venta1.add(producto_3);
+		productos_venta2.add(producto_3);
+		productos_venta2.add(producto_1);
+		productos_venta2.add(producto_3);
 		Venta venta_2 = new Venta(LocalDate.now(), empleado_2, PAGO_DEBITO, cliente_2, productos_venta2,
 				sucursal_lanus);
 
 		// VENTA N3
 		List<Producto> productos_venta3 = new ArrayList<>();
-		productos_venta1.add(producto_1);
-		productos_venta1.add(producto_2);
-		productos_venta1.add(producto_3);
+		productos_venta3.add(producto_1);
+		productos_venta3.add(producto_1);
+		productos_venta3.add(producto_3);
 		Venta venta_3 = new Venta(LocalDate.now(), empleado_3, PAGO_DEBITO, cliente_3, productos_venta3,
 				sucursal_lanus);
 
 		// VENTA N4
 		List<Producto> productos_venta4 = new ArrayList<>();
-		productos_venta1.add(producto_1);
-		productos_venta1.add(producto_2);
-		productos_venta1.add(producto_3);
+		productos_venta4.add(producto_2);
+		productos_venta4.add(producto_2);
+		productos_venta4.add(producto_3);
 		Venta venta_4 = new Venta(LocalDate.now(), empleado_4, PAGO_CREDITO, cliente_4, productos_venta4,
 				sucursal_lomas);
 
 		// VENTA N5
 		List<Producto> productos_venta5 = new ArrayList<>();
-		productos_venta1.add(producto_1);
-		productos_venta1.add(producto_2);
-		productos_venta1.add(producto_3);
+		productos_venta5.add(producto_1);
+		productos_venta5.add(producto_5);
+		productos_venta5.add(producto_3);
 		Venta venta_5 = new Venta(LocalDate.now(), empleado_5, PAGO_CREDITO, cliente_5, productos_venta5,
 				sucursal_lomas);
 		
