@@ -36,6 +36,16 @@ public class UnlaApplication {
 				new Domicilio(4, "15", "KM 4", "GUERNICA", "BS AS"));
 		Cliente cliente_5 = new Cliente(55555555, "ACERO", "INOXIDABLE",
 				new Domicilio(5, "16", "BARADERO", "EZEIZA", "BS AS"));
+		Cliente cliente_6 = new Cliente(66666666, "ACERO", "INOXIDABLE",
+				new Domicilio(15, "17", "CORRIENTES", "EZEIZA", "BS AS"));
+		Cliente cliente_7 = new Cliente(77777777, "ESCOBA", "ESCOBERO",
+				new Domicilio(16, "18", "CATAMARCA", "EZEIZA", "BS AS"));
+		Cliente cliente_8 = new Cliente(88888888, "PEPE", "ARGENTO",
+				new Domicilio(17, "19", "SAN FERNANDO", "SAN MARTIN", "BS AS"));
+		Cliente cliente_9 = new Cliente(99999999, "PIEDAD", "TEPIDO",
+				new Domicilio(18, "20", "MORENO", "RAMOS MEJIA", "BS AS"));
+		Cliente cliente_10 = new Cliente(10101010, "MIMANCHI", "CAFFE",
+				new Domicilio(19, "21", "ALVEAR", "BANFIELD", "BS AS"));
 
 		// GENERAR EMPLEADOS
 		Empleado empleado_1 = new Empleado(Long.valueOf("20666666663"), 66666666, "ESTESEL", "JEFE", "08001345",
@@ -48,17 +58,32 @@ public class UnlaApplication {
 				new ObraSocial(2, "OSECAC"), new Domicilio(9, "1421", "PRES. PERON", "BURZACO", "BS AS"));
 		Empleado empleado_5 = new Empleado(Long.valueOf("20121212123"), 12121212, "ROBERT", "POLLARD", "08001349",
 				new ObraSocial(2, "OSECAC"), new Domicilio(10, "114", "PRES. PERON", "COGHLAN", "BS AS"));
+		Empleado empleado_6 = new Empleado(Long.valueOf("20413213563"), 41321356, "JAMES", "HETFIELD", "08001641",
+				new ObraSocial(2, "OSECAC"), new Domicilio(11, "2145", "COLOMBRES", "LOMAS DE ZAMORA", "BS AS"));
+		Empleado empleado_7 = new Empleado(Long.valueOf("20245653623"), 24565362, "JUAN", "RIVER", "08001642",
+				new ObraSocial(2, "OSECAC"), new Domicilio(12, "544", "MBURUCUYA", "MORON", "BS AS"));
+		Empleado empleado_8 = new Empleado(Long.valueOf("20162452523"), 16245252, "SANTI", "LG", "08001643",
+				new ObraSocial(2, "OSECAC"), new Domicilio(13, "144", "THEQUIAC", "LUJAN", "BS AS"));
+		Empleado empleado_9 = new Empleado(Long.valueOf("26746725653"), 74672565, "FIONA", "SURAN", "08001645",
+				new ObraSocial(2, "OSECAC"), new Domicilio(14, "2322", "AV. ESPORA", "BURZACO", "BS AS"));
+	
 
 		// GENERAR PRODUCTOS
 
-		Producto producto_1 = new Producto(1, false, "Versace Eros", 45000, new Laboratorio(1, "LabChemical"));
-		Producto producto_2 = new Producto(2, true, "Ibu 600", 1000, new Laboratorio(2, "Biotenk"));
-		Producto producto_3 = new Producto(3, false, "BODY MIST AQUA", 20000, new Laboratorio(3, "Wels SRL"));
+		Producto producto_1 = new Producto(1, true, "Roaccutan", 45000, new Laboratorio(1, "LabChemical"));
+		Producto producto_2 = new Producto(2, true, "Ibuprofeno 600", 1000, new Laboratorio(2, "Biotenk"));
+		Producto producto_3 = new Producto(3, true, "Poisson 200", 20000, new Laboratorio(3, "Wels SRL"));
 		Producto producto_4 = new Producto(4, true, "Enalapril", 5000, new Laboratorio(4, "Elea"));
-		Producto producto_5 = new Producto(5, false, "Trekking", 26000, new Laboratorio(5, "Aromas SA"));
+		Producto producto_5 = new Producto(5, false, "Perfume Paco", 26000, null);
+		Producto producto_6 = new Producto(6, false, "Issey Miyake", 180000, null);
+		Producto producto_7 = new Producto(7, true, "Acemuk", 10000, new Laboratorio(2, "Biotenk"));
+		Producto producto_8 = new Producto(8, true, "Erisol", 20000, new Laboratorio(3, "Wels SRL"));
+		Producto producto_9 = new Producto(9, false, "Anachaqueochumbi", 5000, null);
+		Producto producto_10 = new Producto(10, true, "Paracetamol", 26000, new Laboratorio(3, "Wels SRL"));
 
 		// GENERAL SUCURSALES
 		List<Empleado> empleadosLomas = new ArrayList<>();
+		empleadosLomas.add(empleado_6);
 		empleadosLomas.add(empleado_4);
 		empleadosLomas.add(empleado_5);
 		Sucursal sucursal_lomas = new Sucursal(1, "LOMAS", empleadosLomas, empleado_5);
@@ -68,7 +93,13 @@ public class UnlaApplication {
 		empleadosLomas.add(empleado_2);
 		empleadosLomas.add(empleado_3);
 		Sucursal sucursal_lanus = new Sucursal(2, "LANUS", empleadosLanus, empleado_3);
-
+		
+		List<Empleado> empleadosBanfield = new ArrayList<>();
+		empleadosLomas.add(empleado_7);
+		empleadosLomas.add(empleado_8);
+		empleadosLomas.add(empleado_9);
+		Sucursal sucursal_banfield = new Sucursal(3, "BANFIELD", empleadosLanus, empleado_9);
+				
 		// VENTA N1
 		List<Producto> productos_venta1 = new ArrayList<>();
 		productos_venta1.add(producto_4);
@@ -108,6 +139,8 @@ public class UnlaApplication {
 		productos_venta5.add(producto_3);
 		Venta venta_5 = new Venta(LocalDate.now(), empleado_5, PAGO_CREDITO, cliente_5, productos_venta5,
 				sucursal_lomas);
+		
+		/* TODO: ---------> GENERAR 30 VENTAS POR SUCURSAL <----------- */
 		
 		System.out.println("----------------VENTA 1----------------");
 		System.out.println(gson.toJson(venta_1));
