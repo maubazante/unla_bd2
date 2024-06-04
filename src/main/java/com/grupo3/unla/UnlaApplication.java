@@ -23,7 +23,9 @@ public class UnlaApplication {
 	public static final String PAGO_DEBITO = "DEBITO";
 	public static final String PAGO_CREDITO = "CREDITO";
 
-	private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	private static Gson gson = new GsonBuilder().enableComplexMapKeySerialization()
+            .serializeNulls()
+            .setPrettyPrinting().create();
 
 	public static void main(String[] args) {
 
