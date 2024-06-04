@@ -23,6 +23,7 @@ public class Venta {
 		this.formaDePago = formaDePago;
 		this.productos = productos;
 		this.total = getTotalVenta();
+		this.sucursal = sucursal;
 		this.ticket = MathHelper.generarNumeroTicket(sucursal);
 	}
 	

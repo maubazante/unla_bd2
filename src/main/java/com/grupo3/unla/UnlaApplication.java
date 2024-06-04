@@ -1,5 +1,7 @@
 package com.grupo3.unla;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -360,8 +362,22 @@ public class UnlaApplication {
 		ventas.add(venta_28);
 		ventas.add(venta_29);
 		ventas.add(venta_30);
+		
+		String jsonOutput = gson.toJson(ventas);
+		System.out.println(jsonOutput);
+		 String projectRootDirectory = System.getProperty("user.dir");
+	        String filePath = projectRootDirectory + "/ventas.json";
 
-		System.out.println(gson.toJson(ventas));
+
+        try {
+			@SuppressWarnings("resource")
+			FileWriter writer = new FileWriter(filePath);
+			writer.write(jsonOutput);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
 	}
 
 }

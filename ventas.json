@@ -1,0 +1,4301 @@
+[
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-19169867",
+    "empleado": {
+      "cuil": 20666666663,
+      "dni": 66666666,
+      "nombre": "ESTESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001345",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 6,
+        "altura": "20",
+        "calle": "PRES. PERON",
+        "localidad": "LOMAS DE ZAMORA",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 11111111,
+      "nombre": "JUAN",
+      "apellido": "ROMAN",
+      "domicilio": {
+        "id": 1,
+        "altura": "12",
+        "calle": "LUZURIAGA",
+        "localidad": "TEMPERLEY",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 1,
+        "nombre": "OSDE"
+      },
+      "nroAfiliado": "08001213"
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 51000.0,
+    "productos": [
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-12865031",
+    "empleado": {
+      "cuil": 20777777773,
+      "dni": 77777777,
+      "nombre": "ESTESNOESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001346",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 7,
+        "altura": "19",
+        "calle": "PRES. PERON",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 22222222,
+      "nombre": "JUAN",
+      "apellido": "PISELME",
+      "domicilio": {
+        "id": 2,
+        "altura": "13",
+        "calle": "THEQUIAC",
+        "localidad": "SAN JUSTO",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 85000.0,
+    "productos": [
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-41838294",
+    "empleado": {
+      "cuil": 20888888883,
+      "dni": 88888888,
+      "nombre": "PELAZO",
+      "apellido": "ADRIAN",
+      "nroAfiliado": "08001347",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 8,
+        "altura": "1412",
+        "calle": "PRES. PERON",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 33333333,
+      "nombre": "JUAN",
+      "apellido": "BRICKELME",
+      "domicilio": {
+        "id": 3,
+        "altura": "14",
+        "calle": "PRES. PERON",
+        "localidad": "CASTELAR",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "nroAfiliado": "07001212"
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 110000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-21604230",
+    "empleado": {
+      "cuil": 20999999993,
+      "dni": 99999999,
+      "nombre": "LEON",
+      "apellido": "MATENAL",
+      "nroAfiliado": "08001348",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 9,
+        "altura": "1421",
+        "calle": "PRES. PERON",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 44444444,
+      "nombre": "JUAN",
+      "apellido": "RIQUILMES",
+      "domicilio": {
+        "id": 4,
+        "altura": "15",
+        "calle": "KM 4",
+        "localidad": "GUERNICA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 22000.0,
+    "productos": [
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-91490756",
+    "empleado": {
+      "cuil": 20121212123,
+      "dni": 12121212,
+      "nombre": "ROBERT",
+      "apellido": "POLLARD",
+      "nroAfiliado": "08001349",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 10,
+        "altura": "114",
+        "calle": "PRES. PERON",
+        "localidad": "COGHLAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 55555555,
+      "nombre": "ACERO",
+      "apellido": "INOXIDABLE",
+      "domicilio": {
+        "id": 5,
+        "altura": "16",
+        "calle": "BARADERO",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 91000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-15573048",
+    "empleado": {
+      "cuil": 20999999993,
+      "dni": 99999999,
+      "nombre": "LEON",
+      "apellido": "MATENAL",
+      "nroAfiliado": "08001348",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 9,
+        "altura": "1421",
+        "calle": "PRES. PERON",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 33333333,
+      "nombre": "JUAN",
+      "apellido": "BRICKELME",
+      "domicilio": {
+        "id": 3,
+        "altura": "14",
+        "calle": "PRES. PERON",
+        "localidad": "CASTELAR",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "nroAfiliado": "07001212"
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 32000.0,
+    "productos": [
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-35252664",
+    "empleado": {
+      "cuil": 20666666663,
+      "dni": 66666666,
+      "nombre": "ESTESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001345",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 6,
+        "altura": "20",
+        "calle": "PRES. PERON",
+        "localidad": "LOMAS DE ZAMORA",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 33333333,
+      "nombre": "JUAN",
+      "apellido": "BRICKELME",
+      "domicilio": {
+        "id": 3,
+        "altura": "14",
+        "calle": "PRES. PERON",
+        "localidad": "CASTELAR",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "nroAfiliado": "07001212"
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 70000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-96700152",
+    "empleado": {
+      "cuil": 20777777773,
+      "dni": 77777777,
+      "nombre": "ESTESNOESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001346",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 7,
+        "altura": "19",
+        "calle": "PRES. PERON",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 11111111,
+      "nombre": "JUAN",
+      "apellido": "ROMAN",
+      "domicilio": {
+        "id": 1,
+        "altura": "12",
+        "calle": "LUZURIAGA",
+        "localidad": "TEMPERLEY",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 1,
+        "nombre": "OSDE"
+      },
+      "nroAfiliado": "08001213"
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 47000.0,
+    "productos": [
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-41279285",
+    "empleado": {
+      "cuil": 20888888883,
+      "dni": 88888888,
+      "nombre": "PELAZO",
+      "apellido": "ADRIAN",
+      "nroAfiliado": "08001347",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 8,
+        "altura": "1412",
+        "calle": "PRES. PERON",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 88888888,
+      "nombre": "PEPE",
+      "apellido": "ARGENTO",
+      "domicilio": {
+        "id": 17,
+        "altura": "19",
+        "calle": "SAN FERNANDO",
+        "localidad": "SAN MARTIN",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 16000.0,
+    "productos": [
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 9,
+        "isMedicamento": false,
+        "descripcion": "Anachaqueochumbi",
+        "precio": 5000.0
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-23853600",
+    "empleado": {
+      "cuil": 20666666663,
+      "dni": 66666666,
+      "nombre": "ESTESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001345",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 6,
+        "altura": "20",
+        "calle": "PRES. PERON",
+        "localidad": "LOMAS DE ZAMORA",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 66666666,
+      "nombre": "ACERO",
+      "apellido": "INOXIDABLE",
+      "domicilio": {
+        "id": 15,
+        "altura": "17",
+        "calle": "CORRIENTES",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 91000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 8,
+        "isMedicamento": true,
+        "descripcion": "Erisol",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-35127436",
+    "empleado": {
+      "cuil": 20777777773,
+      "dni": 77777777,
+      "nombre": "ESTESNOESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001346",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 7,
+        "altura": "19",
+        "calle": "PRES. PERON",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 77777777,
+      "nombre": "ESCOBA",
+      "apellido": "ESCOBERO",
+      "domicilio": {
+        "id": 16,
+        "altura": "18",
+        "calle": "CATAMARCA",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 50000.0,
+    "productos": [
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 8,
+        "isMedicamento": true,
+        "descripcion": "Erisol",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-42988420",
+    "empleado": {
+      "cuil": 20777777773,
+      "dni": 77777777,
+      "nombre": "ESTESNOESEL",
+      "apellido": "JEFE",
+      "nroAfiliado": "08001346",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 7,
+        "altura": "19",
+        "calle": "PRES. PERON",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 33333333,
+      "nombre": "JUAN",
+      "apellido": "BRICKELME",
+      "domicilio": {
+        "id": 3,
+        "altura": "14",
+        "calle": "PRES. PERON",
+        "localidad": "CASTELAR",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "nroAfiliado": "07001212"
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 195000.0,
+    "productos": [
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      },
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0002-70000672",
+    "empleado": {
+      "cuil": 20888888883,
+      "dni": 88888888,
+      "nombre": "PELAZO",
+      "apellido": "ADRIAN",
+      "nroAfiliado": "08001347",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 8,
+        "altura": "1412",
+        "calle": "PRES. PERON",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 99999999,
+      "nombre": "PIEDAD",
+      "apellido": "TEPIDO",
+      "domicilio": {
+        "id": 18,
+        "altura": "20",
+        "calle": "MORENO",
+        "localidad": "RAMOS MEJIA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 2,
+      "nombre": "LANUS",
+      "empleados": [
+        {
+          "cuil": 20666666663,
+          "dni": 66666666,
+          "nombre": "ESTESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001345",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 6,
+            "altura": "20",
+            "calle": "PRES. PERON",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20777777773,
+          "dni": 77777777,
+          "nombre": "ESTESNOESEL",
+          "apellido": "JEFE",
+          "nroAfiliado": "08001346",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 7,
+            "altura": "19",
+            "calle": "PRES. PERON",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20888888883,
+          "dni": 88888888,
+          "nombre": "PELAZO",
+          "apellido": "ADRIAN",
+          "nroAfiliado": "08001347",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 8,
+            "altura": "1412",
+            "calle": "PRES. PERON",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20888888883,
+        "dni": 88888888,
+        "nombre": "PELAZO",
+        "apellido": "ADRIAN",
+        "nroAfiliado": "08001347",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 8,
+          "altura": "1412",
+          "calle": "PRES. PERON",
+          "localidad": "LUJAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 75000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-88614973",
+    "empleado": {
+      "cuil": 20999999993,
+      "dni": 99999999,
+      "nombre": "LEON",
+      "apellido": "MATENAL",
+      "nroAfiliado": "08001348",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 9,
+        "altura": "1421",
+        "calle": "PRES. PERON",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 22222222,
+      "nombre": "JUAN",
+      "apellido": "PISELME",
+      "domicilio": {
+        "id": 2,
+        "altura": "13",
+        "calle": "THEQUIAC",
+        "localidad": "SAN JUSTO",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 97000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-52783856",
+    "empleado": {
+      "cuil": 20121212123,
+      "dni": 12121212,
+      "nombre": "ROBERT",
+      "apellido": "POLLARD",
+      "nroAfiliado": "08001349",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 10,
+        "altura": "114",
+        "calle": "PRES. PERON",
+        "localidad": "COGHLAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 55555555,
+      "nombre": "ACERO",
+      "apellido": "INOXIDABLE",
+      "domicilio": {
+        "id": 5,
+        "altura": "16",
+        "calle": "BARADERO",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 56000.0,
+    "productos": [
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-47399907",
+    "empleado": {
+      "cuil": 20413213563,
+      "dni": 41321356,
+      "nombre": "JAMES",
+      "apellido": "HETFIELD",
+      "nroAfiliado": "08001641",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 11,
+        "altura": "2145",
+        "calle": "COLOMBRES",
+        "localidad": "LOMAS DE ZAMORA",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 66666666,
+      "nombre": "ACERO",
+      "apellido": "INOXIDABLE",
+      "domicilio": {
+        "id": 15,
+        "altura": "17",
+        "calle": "CORRIENTES",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 210000.0,
+    "productos": [
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 8,
+        "isMedicamento": true,
+        "descripcion": "Erisol",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-34437394",
+    "empleado": {
+      "cuil": 20999999993,
+      "dni": 99999999,
+      "nombre": "LEON",
+      "apellido": "MATENAL",
+      "nroAfiliado": "08001348",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 9,
+        "altura": "1421",
+        "calle": "PRES. PERON",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 10101010,
+      "nombre": "MIMANCHI",
+      "apellido": "CAFFE",
+      "domicilio": {
+        "id": 19,
+        "altura": "21",
+        "calle": "ALVEAR",
+        "localidad": "BANFIELD",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 97000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-58677104",
+    "empleado": {
+      "cuil": 20999999993,
+      "dni": 99999999,
+      "nombre": "LEON",
+      "apellido": "MATENAL",
+      "nroAfiliado": "08001348",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 9,
+        "altura": "1421",
+        "calle": "PRES. PERON",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 55555555,
+      "nombre": "ACERO",
+      "apellido": "INOXIDABLE",
+      "domicilio": {
+        "id": 5,
+        "altura": "16",
+        "calle": "BARADERO",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 201000.0,
+    "productos": [
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-31358218",
+    "empleado": {
+      "cuil": 20413213563,
+      "dni": 41321356,
+      "nombre": "JAMES",
+      "apellido": "HETFIELD",
+      "nroAfiliado": "08001641",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 11,
+        "altura": "2145",
+        "calle": "COLOMBRES",
+        "localidad": "LOMAS DE ZAMORA",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 11111111,
+      "nombre": "JUAN",
+      "apellido": "ROMAN",
+      "domicilio": {
+        "id": 1,
+        "altura": "12",
+        "calle": "LUZURIAGA",
+        "localidad": "TEMPERLEY",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 1,
+        "nombre": "OSDE"
+      },
+      "nroAfiliado": "08001213"
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 211000.0,
+    "productos": [
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0001-94830732",
+    "empleado": {
+      "cuil": 20121212123,
+      "dni": 12121212,
+      "nombre": "ROBERT",
+      "apellido": "POLLARD",
+      "nroAfiliado": "08001349",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 10,
+        "altura": "114",
+        "calle": "PRES. PERON",
+        "localidad": "COGHLAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 33333333,
+      "nombre": "JUAN",
+      "apellido": "BRICKELME",
+      "domicilio": {
+        "id": 3,
+        "altura": "14",
+        "calle": "PRES. PERON",
+        "localidad": "CASTELAR",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "nroAfiliado": "07001212"
+    },
+    "sucursal": {
+      "id": 1,
+      "nombre": "LOMAS",
+      "empleados": [
+        {
+          "cuil": 20413213563,
+          "dni": 41321356,
+          "nombre": "JAMES",
+          "apellido": "HETFIELD",
+          "nroAfiliado": "08001641",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 11,
+            "altura": "2145",
+            "calle": "COLOMBRES",
+            "localidad": "LOMAS DE ZAMORA",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20999999993,
+          "dni": 99999999,
+          "nombre": "LEON",
+          "apellido": "MATENAL",
+          "nroAfiliado": "08001348",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 9,
+            "altura": "1421",
+            "calle": "PRES. PERON",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20121212123,
+          "dni": 12121212,
+          "nombre": "ROBERT",
+          "apellido": "POLLARD",
+          "nroAfiliado": "08001349",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 10,
+            "altura": "114",
+            "calle": "PRES. PERON",
+            "localidad": "COGHLAN",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 20121212123,
+        "dni": 12121212,
+        "nombre": "ROBERT",
+        "apellido": "POLLARD",
+        "nroAfiliado": "08001349",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 10,
+          "altura": "114",
+          "calle": "PRES. PERON",
+          "localidad": "COGHLAN",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 60000.0,
+    "productos": [
+      {
+        "codigo": 9,
+        "isMedicamento": false,
+        "descripcion": "Anachaqueochumbi",
+        "precio": 5000.0
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-76946844",
+    "empleado": {
+      "cuil": 20162452523,
+      "dni": 16245252,
+      "nombre": "SANTI",
+      "apellido": "LG",
+      "nroAfiliado": "08001643",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 13,
+        "altura": "144",
+        "calle": "THEQUIAC",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 88888888,
+      "nombre": "PEPE",
+      "apellido": "ARGENTO",
+      "domicilio": {
+        "id": 17,
+        "altura": "19",
+        "calle": "SAN FERNANDO",
+        "localidad": "SAN MARTIN",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 207000.0,
+    "productos": [
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      },
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-59270389",
+    "empleado": {
+      "cuil": 20245653623,
+      "dni": 24565362,
+      "nombre": "JUAN",
+      "apellido": "RIVER",
+      "nroAfiliado": "08001642",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 12,
+        "altura": "544",
+        "calle": "MBURUCUYA",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 22222222,
+      "nombre": "JUAN",
+      "apellido": "PISELME",
+      "domicilio": {
+        "id": 2,
+        "altura": "13",
+        "calle": "THEQUIAC",
+        "localidad": "SAN JUSTO",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 70000.0,
+    "productos": [
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-31966435",
+    "empleado": {
+      "cuil": 20162452523,
+      "dni": 16245252,
+      "nombre": "SANTI",
+      "apellido": "LG",
+      "nroAfiliado": "08001643",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 13,
+        "altura": "144",
+        "calle": "THEQUIAC",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 10101010,
+      "nombre": "MIMANCHI",
+      "apellido": "CAFFE",
+      "domicilio": {
+        "id": 19,
+        "altura": "21",
+        "calle": "ALVEAR",
+        "localidad": "BANFIELD",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 72000.0,
+    "productos": [
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      },
+      {
+        "codigo": 8,
+        "isMedicamento": true,
+        "descripcion": "Erisol",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-78558599",
+    "empleado": {
+      "cuil": 26746725653,
+      "dni": 74672565,
+      "nombre": "FIONA",
+      "apellido": "SURAN",
+      "nroAfiliado": "08001645",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 14,
+        "altura": "2322",
+        "calle": "AV. ESPORA",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 77777777,
+      "nombre": "ESCOBA",
+      "apellido": "ESCOBERO",
+      "domicilio": {
+        "id": 16,
+        "altura": "18",
+        "calle": "CATAMARCA",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 226000.0,
+    "productos": [
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-61866361",
+    "empleado": {
+      "cuil": 20162452523,
+      "dni": 16245252,
+      "nombre": "SANTI",
+      "apellido": "LG",
+      "nroAfiliado": "08001643",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 13,
+        "altura": "144",
+        "calle": "THEQUIAC",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 44444444,
+      "nombre": "JUAN",
+      "apellido": "RIQUILMES",
+      "domicilio": {
+        "id": 4,
+        "altura": "15",
+        "calle": "KM 4",
+        "localidad": "GUERNICA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 31000.0,
+    "productos": [
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 8,
+        "isMedicamento": true,
+        "descripcion": "Erisol",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 2,
+        "isMedicamento": true,
+        "descripcion": "Ibuprofeno 600",
+        "precio": 1000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-43339963",
+    "empleado": {
+      "cuil": 20245653623,
+      "dni": 24565362,
+      "nombre": "JUAN",
+      "apellido": "RIVER",
+      "nroAfiliado": "08001642",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 12,
+        "altura": "544",
+        "calle": "MBURUCUYA",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 55555555,
+      "nombre": "ACERO",
+      "apellido": "INOXIDABLE",
+      "domicilio": {
+        "id": 5,
+        "altura": "16",
+        "calle": "BARADERO",
+        "localidad": "EZEIZA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 91000.0,
+    "productos": [
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      },
+      {
+        "codigo": 3,
+        "isMedicamento": true,
+        "descripcion": "Poisson 200",
+        "precio": 20000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 5,
+        "isMedicamento": false,
+        "descripcion": "Perfume Paco",
+        "precio": 26000.0
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-36500751",
+    "empleado": {
+      "cuil": 26746725653,
+      "dni": 74672565,
+      "nombre": "FIONA",
+      "apellido": "SURAN",
+      "nroAfiliado": "08001645",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 14,
+        "altura": "2322",
+        "calle": "AV. ESPORA",
+        "localidad": "BURZACO",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 99999999,
+      "nombre": "PIEDAD",
+      "apellido": "TEPIDO",
+      "domicilio": {
+        "id": 18,
+        "altura": "20",
+        "calle": "MORENO",
+        "localidad": "RAMOS MEJIA",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "EFECTIVO",
+    "total": 211000.0,
+    "productos": [
+      {
+        "codigo": 6,
+        "isMedicamento": false,
+        "descripcion": "Issey Miyake",
+        "precio": 180000.0
+      },
+      {
+        "codigo": 9,
+        "isMedicamento": false,
+        "descripcion": "Anachaqueochumbi",
+        "precio": 5000.0
+      },
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-95381276",
+    "empleado": {
+      "cuil": 20162452523,
+      "dni": 16245252,
+      "nombre": "SANTI",
+      "apellido": "LG",
+      "nroAfiliado": "08001643",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 13,
+        "altura": "144",
+        "calle": "THEQUIAC",
+        "localidad": "LUJAN",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 11111111,
+      "nombre": "JUAN",
+      "apellido": "ROMAN",
+      "domicilio": {
+        "id": 1,
+        "altura": "12",
+        "calle": "LUZURIAGA",
+        "localidad": "TEMPERLEY",
+        "provincia": "BS AS"
+      },
+      "obraSocial": {
+        "id": 1,
+        "nombre": "OSDE"
+      },
+      "nroAfiliado": "08001213"
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "CREDITO",
+    "total": 60000.0,
+    "productos": [
+      {
+        "codigo": 4,
+        "isMedicamento": true,
+        "descripcion": "Enalapril",
+        "precio": 5000.0,
+        "laboratorio": {
+          "id": 4,
+          "nombre": "Elea"
+        }
+      },
+      {
+        "codigo": 7,
+        "isMedicamento": true,
+        "descripcion": "Acemuk",
+        "precio": 10000.0,
+        "laboratorio": {
+          "id": 2,
+          "nombre": "Biotenk"
+        }
+      },
+      {
+        "codigo": 1,
+        "isMedicamento": true,
+        "descripcion": "Roaccutan",
+        "precio": 45000.0,
+        "laboratorio": {
+          "id": 1,
+          "nombre": "LabChemical"
+        }
+      }
+    ]
+  },
+  {
+    "fecha": {
+      "year": 2024,
+      "month": 6,
+      "day": 4
+    },
+    "ticket": "0003-76439995",
+    "empleado": {
+      "cuil": 20245653623,
+      "dni": 24565362,
+      "nombre": "JUAN",
+      "apellido": "RIVER",
+      "nroAfiliado": "08001642",
+      "obraSocial": {
+        "id": 2,
+        "nombre": "OSECAC"
+      },
+      "domicilio": {
+        "id": 12,
+        "altura": "544",
+        "calle": "MBURUCUYA",
+        "localidad": "MORON",
+        "provincia": "BS AS"
+      }
+    },
+    "cliente": {
+      "dni": 10101010,
+      "nombre": "MIMANCHI",
+      "apellido": "CAFFE",
+      "domicilio": {
+        "id": 19,
+        "altura": "21",
+        "calle": "ALVEAR",
+        "localidad": "BANFIELD",
+        "provincia": "BS AS"
+      }
+    },
+    "sucursal": {
+      "id": 3,
+      "nombre": "BANFIELD",
+      "empleados": [
+        {
+          "cuil": 20245653623,
+          "dni": 24565362,
+          "nombre": "JUAN",
+          "apellido": "RIVER",
+          "nroAfiliado": "08001642",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 12,
+            "altura": "544",
+            "calle": "MBURUCUYA",
+            "localidad": "MORON",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 20162452523,
+          "dni": 16245252,
+          "nombre": "SANTI",
+          "apellido": "LG",
+          "nroAfiliado": "08001643",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 13,
+            "altura": "144",
+            "calle": "THEQUIAC",
+            "localidad": "LUJAN",
+            "provincia": "BS AS"
+          }
+        },
+        {
+          "cuil": 26746725653,
+          "dni": 74672565,
+          "nombre": "FIONA",
+          "apellido": "SURAN",
+          "nroAfiliado": "08001645",
+          "obraSocial": {
+            "id": 2,
+            "nombre": "OSECAC"
+          },
+          "domicilio": {
+            "id": 14,
+            "altura": "2322",
+            "calle": "AV. ESPORA",
+            "localidad": "BURZACO",
+            "provincia": "BS AS"
+          }
+        }
+      ],
+      "encargado": {
+        "cuil": 26746725653,
+        "dni": 74672565,
+        "nombre": "FIONA",
+        "apellido": "SURAN",
+        "nroAfiliado": "08001645",
+        "obraSocial": {
+          "id": 2,
+          "nombre": "OSECAC"
+        },
+        "domicilio": {
+          "id": 14,
+          "altura": "2322",
+          "calle": "AV. ESPORA",
+          "localidad": "BURZACO",
+          "provincia": "BS AS"
+        }
+      }
+    },
+    "formaDePago": "DEBITO",
+    "total": 51000.0,
+    "productos": [
+      {
+        "codigo": 10,
+        "isMedicamento": true,
+        "descripcion": "Paracetamol",
+        "precio": 26000.0,
+        "laboratorio": {
+          "id": 3,
+          "nombre": "Wels SRL"
+        }
+      },
+      {
+        "codigo": 9,
+        "isMedicamento": false,
+        "descripcion": "Anachaqueochumbi",
+        "precio": 5000.0
+      },
+      {
