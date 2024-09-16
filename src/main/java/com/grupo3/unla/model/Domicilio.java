@@ -46,4 +46,21 @@ public class Domicilio {
 	public void setProvincia(String provincia) {
 		this.provincia = provincia;
 	}
+	
+	public boolean validarDireccion() {
+	    if (altura == null || altura.isEmpty() || calle == null || calle.isEmpty() ||
+	        localidad == null || localidad.isEmpty() || provincia == null || provincia.isEmpty()) {
+	        System.out.println("La dirección no es válida. Faltan datos.");
+	        return false;
+	    }
+	    return true;
+	}
+
+	public boolean validarLongitudCampos() {
+	    if (altura.length() > 10 || localidad.length() > 50 || provincia.length() > 50) {
+	        System.out.println("Los campos de la dirección exceden la longitud permitida.");
+	        return false;
+	    }
+	    return true;
+	}
 }

@@ -16,6 +16,8 @@ public class Venta {
 	public double total;
 	public List<Producto> productos;
 	
+	public static final int PORCENTAJE_IVA = 21;
+	
 	public Venta(LocalDate fecha, Empleado empleado, String formaDePago, Cliente cliente, List<Producto> productos, Sucursal sucursal) {
 		super();
 		SucursalDTO sucursalDTO = new SucursalDTO(sucursal);
@@ -70,6 +72,31 @@ public class Venta {
 	public void setProductos(List<Producto> productos) {
 		this.productos = productos;
 	}
+	
+	public void agregarProducto(Producto producto) {
+	    if (this.productos != null) {
+	        this.productos.add(producto);
+	        this.total = getTotalVenta(); // Recalcular el total después de agregar
+	        System.out.println("Producto agregado: " + producto.getDescripcion());
+	    }
+	}
+	
+	public void eliminarProducto(Producto producto) {
+	    if (this.productos != null && this.productos.contains(producto)) {
+	        this.productos.remove(producto);
+	        this.total = getTotalVenta(); // Recalcular el total después de eliminar
+	        System.out.println("Producto eliminado: " + producto.getDescripcion());
+	    } else {
+	        System.out.println("El producto no está en la lista.");
+	    }
+	}
+	
+	public double calcularIVAdelTotal() {
+	    double impuestos = this.total * (PORCENTAJE_IVA / 100);
+	    System.out.println("Impuestos calculados: $" + impuestos);
+	    return impuestos;
+	}
+
 	
 	private double getTotalVenta() {
 		float total = 0;

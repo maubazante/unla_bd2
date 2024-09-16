@@ -46,4 +46,29 @@ public class Producto {
 	public void setLaboratorio(Laboratorio laboratorio) {
 		this.laboratorio = laboratorio;
 	}
+	
+	public void aplicarDescuento(double porcentaje) {
+	    if (porcentaje < 0 || porcentaje > 100) {
+	        System.out.println("Porcentaje de descuento inválido.");
+	        return;
+	    }
+	    double descuento = this.precio * (porcentaje / 100);
+	    this.precio -= descuento;
+	    System.out.println("Se aplicó un descuento del " + porcentaje + "%. Precio final: $" + this.precio);
+	}
+	
+	public void actualizarPrecioPorInflacion(double porcentajeInflacion) {
+	    if (porcentajeInflacion < 0) {
+	        System.out.println("Porcentaje de inflación no válido.");
+	        return;
+	    }
+	    this.precio += this.precio * (porcentajeInflacion / 100);
+	    System.out.println("Precio actualizado por inflación. Nuevo precio: $" + this.precio);
+	}
+	
+	public boolean esGenerico() {
+	    return this.descripcion.toLowerCase().contains("genérico");
+	}
+
+
 }

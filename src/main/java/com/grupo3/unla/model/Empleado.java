@@ -1,5 +1,8 @@
 package com.grupo3.unla.model;
 
+import java.time.LocalDate;
+import java.time.Period;
+
 public class Empleado {
 	public long cuil;
 	public int dni;
@@ -8,6 +11,22 @@ public class Empleado {
 	public String nroAfiliado;
 	public ObraSocial obraSocial;
 	public Domicilio domicilio;
+	public LocalDate fechaIngreso;
+	
+	// con fechaIngreso
+	public Empleado(long cuil, int dni, String nombre, String apellido, String nroAfiliado, ObraSocial obraSocial,
+			Domicilio domicilio, LocalDate fechaIngreso) {
+		super();
+		this.cuil = cuil;
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.nroAfiliado = nroAfiliado;
+		this.obraSocial = obraSocial;
+		this.domicilio = domicilio;
+		this.fechaIngreso = fechaIngreso;
+	}
+	
 	public long getCuil() {
 		return cuil;
 	}
@@ -50,6 +69,31 @@ public class Empleado {
 	public void setDomicilio(Domicilio domicilio) {
 		this.domicilio = domicilio;
 	}
+	
+	public boolean validarCuil() {
+	    return String.valueOf(cuil).length() == 11;
+	}
+
+	public boolean validarDni() {
+	    return String.valueOf(dni).length() >= 7 && String.valueOf(dni).length() <= 8;
+	}
+	
+    public Integer calcularAntiguedad() {
+        if (fechaIngreso == null) {
+            System.out.println("La fecha de ingreso no está asignada.");
+            return null; 
+        }
+        return Period.between(fechaIngreso, LocalDate.now()).getYears();
+    }
+
+    public void setFechaIngreso(LocalDate fechaIngreso) {
+        this.fechaIngreso = fechaIngreso;
+    }
+
+    public LocalDate getFechaIngreso() {
+        return fechaIngreso;
+    }
+
 	
 	public Empleado(long cuil, int dni, String nombre, String apellido, String nroAfiliado, ObraSocial obraSocial,
 			Domicilio domicilio) {
