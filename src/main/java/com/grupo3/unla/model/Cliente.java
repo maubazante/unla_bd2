@@ -26,6 +26,13 @@ public class Cliente {
 		this.nroAfiliado = nroAfiliado;
 	}
 	
+	public Cliente(int dni, String nombre, String apellido) {
+		super();
+		this.dni = dni;
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+
 	public int getDni() {
 		return dni;
 	}

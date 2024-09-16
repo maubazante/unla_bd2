@@ -98,7 +98,7 @@ public class Venta {
 	}
 
 	
-	private double getTotalVenta() {
+	public double getTotalVenta() {
 		float total = 0;
 		if(this.productos == null) return total;
 		for(Producto prodIt: this.productos) {
