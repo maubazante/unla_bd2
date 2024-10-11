@@ -19,50 +19,63 @@ import com.grupo3.unla.model.Venta;
 
 public class VentaUnitTest {
 
-    private Venta venta;
-    private Empleado empleadoMock;
-    private Cliente clienteMock;
-    private List<Producto> productosMock;
-    private Sucursal sucursalMock;
+	private Venta venta;
+	private Empleado empleadoMock;
+	private Cliente clienteMock;
+	private List<Producto> productosMock;
+	private Sucursal sucursalMock;
 
-    @BeforeEach
-    public void setUp() {
-        empleadoMock = mock(Empleado.class);
-        clienteMock = mock(Cliente.class);
-        productosMock = new ArrayList<>();
-        sucursalMock = mock(Sucursal.class);
+	@BeforeEach
+	public void setUp() {
+		empleadoMock = mock(Empleado.class);
+		clienteMock = mock(Cliente.class);
+		productosMock = new ArrayList<>();
+		sucursalMock = mock(Sucursal.class);
 
-        Producto productoMock = mock(Producto.class);
-        when(productoMock.getPrecio()).thenReturn(500.0);
-        productosMock.add(productoMock);
+		Producto productoMock = mock(Producto.class);
+		when(productoMock.getPrecio()).thenReturn(500.0);
+		productosMock.add(productoMock);
 
-        venta = new Venta(LocalDate.now(), empleadoMock, "Tarjeta", clienteMock, productosMock, sucursalMock);
-    }
+		venta = new Venta(LocalDate.now(), empleadoMock, "Tarjeta", clienteMock, productosMock, sucursalMock);
+	}
 
-    @Test
-    public void testGetTotalVenta() {
-        assertEquals(500.0, venta.getTotalVenta(), "El total de la venta debería ser 500.0");
-    }
+	@Test
+	public void testGetTotalVenta() {
+		assertEquals(500.0, venta.getTotalVenta(), "El total de la venta debería ser 500.0");
+	}
 
-    @Test
-    public void testAgregarProducto() {
-        Producto productoNuevo = mock(Producto.class);
-        when(productoNuevo.getPrecio()).thenReturn(300.0);
+	@Test
+	public void testAgregarProducto() {
+		Producto productoNuevo = mock(Producto.class);
+		when(productoNuevo.getPrecio()).thenReturn(300.0);
 
-        venta.agregarProducto(productoNuevo);
-        assertEquals(800.0, venta.getTotalVenta(), "El total después de agregar el producto debería ser 800.0");
-    }
+		venta.agregarProducto(productoNuevo);
+		assertEquals(800.0, venta.getTotalVenta(), "El total después de agregar el producto debería ser 800.0");
+	}
 
-    @Test
-    public void testEliminarProducto() {
-        Producto productoAEliminar = productosMock.get(0);
-        venta.eliminarProducto(productoAEliminar);
-        assertEquals(0.0, venta.getTotalVenta(), "El total después de eliminar el producto debería ser 0.0");
-    }
+	@Test
+	public void testEliminarProducto() {
+		Producto productoAEliminar = productosMock.get(0);
+		venta.eliminarProducto(productoAEliminar);
+		assertEquals(0.0, venta.getTotalVenta(), "El total después de eliminar el producto debería ser 0.0");
+	}
 
-    @Test
-    public void testCalcularIva() {
-        venta.calcularIVAdelTotal();
-        assertEquals(605.0, venta.getTotalVenta(), "El total después de aplicar el 21% del IVA debería ser 605.0");
-    }
+	@Test
+	public void testCalcularIva() {
+		venta.calcularIVAdelTotal();
+		assertEquals(605.0, venta.getTotalVenta(), "El total después de aplicar el 21% del IVA debería ser 605.0");
+	}
+
+	@Test
+	public void testAgregarEliminarProducto() {
+		Producto productoMock = mock(Producto.class);
+		when(productoMock.getPrecio()).thenReturn(400.0);
+
+		venta.agregarProducto(productoMock);
+		assertEquals(900.0, venta.getTotalVenta(), "El total después de agregar el producto debería ser 900.0");
+
+		venta.eliminarProducto(productoMock);
+		assertEquals(500.0, venta.getTotalVenta(),
+				"El total después de eliminar el producto debería volver a ser 500.0");
+	}
 }
