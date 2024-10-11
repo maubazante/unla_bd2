@@ -69,6 +69,4 @@ public class Producto {
 	public boolean esGenerico() {
 	    return this.descripcion.toLowerCase().contains("genérico");
 	}
-
-
 }
