@@ -14,8 +14,10 @@ public class SucursalDTO {
 	
 	public SucursalDTO(Sucursal sucursal) {
 		super();
-		this.id = sucursal.getId();
-		this.nombre = sucursal.getNombre();
+		if(sucursal != null) {
+			this.id = sucursal.getId();
+			this.nombre = sucursal.getNombre();			
+		}
 	}
 
 	public int getId() {

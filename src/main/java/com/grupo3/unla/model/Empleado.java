@@ -17,6 +17,10 @@ public class Empleado {
 	private double salarioBase;
 	private List<Venta> ventasRealizadas = new ArrayList<>();
 
+	public Empleado() {
+		super();
+	}
+
 	// con fechaIngreso
 	public Empleado(long cuil, int dni, String nombre, String apellido, String nroAfiliado, ObraSocial obraSocial,
 			Domicilio domicilio, LocalDate fechaIngreso) {

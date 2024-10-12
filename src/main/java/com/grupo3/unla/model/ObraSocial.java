@@ -9,6 +9,10 @@ public class ObraSocial {
 	private List<Cliente> afiliados = new ArrayList<>();
 	private List<Producto> medicamentosCubiertos = new ArrayList<>();
 
+	public ObraSocial() {
+		super();
+	}
+
 	public ObraSocial(int id, String nombre) {
 		super();
 		this.id = id;

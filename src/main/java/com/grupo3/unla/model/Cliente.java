@@ -14,6 +14,11 @@ public class Cliente {
 	public String nroAfiliado;
 	private List<Venta> historialCompras = new ArrayList<>();
 
+
+	public Cliente() {
+		super();
+	}
+
 	public Cliente(int dni, String nombre, String apellido, Domicilio domicilio) {
 		super();
 		this.dni = dni;
