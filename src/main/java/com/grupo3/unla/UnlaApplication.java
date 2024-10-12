@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.grupo3.unla.model.Cliente;
 import com.grupo3.unla.model.Domicilio;
 import com.grupo3.unla.model.Empleado;
@@ -20,10 +18,6 @@ public class UnlaApplication {
 	public static final String PAGO_EFECTIVO = "EFECTIVO";
 	public static final String PAGO_DEBITO = "DEBITO";
 	public static final String PAGO_CREDITO = "CREDITO";
-
-	private static Gson gson = new GsonBuilder().enableComplexMapKeySerialization()
-            .serializeNulls()
-            .setPrettyPrinting().create();
 
 	public static void main(String[] args) {
 
@@ -363,7 +357,6 @@ public class UnlaApplication {
 		ventas.add(venta_29);
 		ventas.add(venta_30);
 		
-		String jsonOutput = gson.toJson(ventas);
-		System.out.println(jsonOutput);
+		System.out.println(ventas);
 	}
 }
