@@ -35,6 +35,14 @@ public class ObraSocial {
 		this.nombre = nombre;
 	}
 
+	public List<Cliente> getAfiliados() {
+		return afiliados;
+	}
+
+	public void setAfiliados(List<Cliente> afiliados) {
+		this.afiliados = afiliados;
+	}
+
 	public List<Producto> getMedicamentosCubiertos() {
 		return medicamentosCubiertos;
 	}

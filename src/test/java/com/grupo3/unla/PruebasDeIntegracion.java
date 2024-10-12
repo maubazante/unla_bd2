@@ -1,6 +1,7 @@
 package com.grupo3.unla;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -264,4 +265,103 @@ public class PruebasDeIntegracion {
 		assertEquals(210.0, iva, 0.01, "El IVA debería ser el 21% del total.");
 		assertEquals(1210.0, totalConIVA, 0.01, "El total con IVA debería ser correcto.");
 	}
+
+	@Test
+	public void testCalculoSalarioSinVentas() {
+		// Crear Empleado sin ventas realizadas
+		Empleado empleado = new Empleado(20304050609L, 87654323, "Pedro", "Martinez", "D013", null, null,
+				LocalDate.now().minusYears(3));
+		empleado.setSalarioBase(5000.0);
+
+		// Calcular salario con bonificación
+		double salarioConBonificacion = empleado.calcularSalarioConBonificacion();
+
+		// Verificar que el salario es igual al salario base, ya que no hay ventas
+		assertEquals(5000.0, salarioConBonificacion, 0.01,
+				"El salario con bonificación debería ser igual al salario base.");
+	}
+
+	@Test
+	public void testValidarTarjetaConNumeroInvalido() {
+		// Crear FormaDePago con tipo Tarjeta de Crédito
+		FormaDePago formaDePago = new FormaDePago(1, "Tarjeta de Crédito");
+		formaDePago.setMontoTotal(1000.0);
+
+		// Validar número de tarjeta (usando un número inválido de prueba)
+		String numeroTarjetaInvalido = "1234567890123456"; // Número inválido para Luhn Algorithm
+		assertFalse(formaDePago.validarNumeroTarjeta(numeroTarjetaInvalido),
+				"El número de tarjeta debería ser inválido.");
+	}
+
+	@Test
+	public void testVentaSinProductos() {
+		// Crear Cliente y Empleado
+		Cliente cliente = new Cliente(12345679, "Lisa", "Simpson", null);
+		Empleado empleado = new Empleado(20304050610L, 87654324, "Marge", "Simpson", "D014", null, null);
+
+		// Crear Venta con lista de productos vacía
+		Venta venta = new Venta(LocalDate.now(), empleado, "Efectivo", cliente, new ArrayList<>(), null);
+
+		// Verificar que el total de la venta es 0.0
+		assertEquals(0.0, venta.getTotalVenta(), 0.01, "El total de la venta debería ser 0.0 cuando no hay productos.");
+	}
+
+	@Test
+	public void testCalcularIngresosLaboratoriosSinProductos() {
+		// Crear Laboratorio
+		Laboratorio lab = new Laboratorio(3, "Lab C");
+
+		// Crear Venta sin productos
+		Venta venta = new Venta(LocalDate.now(), null, "Efectivo", null, new ArrayList<>(), null);
+
+		// Calcular ingresos del laboratorio
+		double ingresosLab = lab.calcularIngresos(venta.getProductos());
+
+		// Verificar que los ingresos son 0.0
+		assertEquals(0.0, ingresosLab, 0.01, "El ingreso del laboratorio debería ser 0.0 cuando no hay productos.");
+	}
+
+	@Test
+	public void testAplicarDescuentoMayorAlPrecioDelProducto() {
+		// Crear Producto
+		Producto producto = new Producto(1, false, "Perfume", 100.0, null);
+
+		// Aplicar descuento del 150%
+		producto.aplicarDescuento(150.0);
+
+		// Verificar que el precio no puede ser menor a 0
+		assertEquals(0.0, producto.getPrecio(), 0.01,
+				"El precio del producto no debería ser menor a 0 después de aplicar un descuento excesivo.");
+
+		// Crear Venta con el producto
+		Venta venta = new Venta(LocalDate.now(), null, "Efectivo", null, Arrays.asList(producto), null);
+
+		// Verificar total de la venta
+		assertEquals(0.0, venta.getTotalVenta(), 0.01,
+				"El total de la venta debería ser 0.0 debido al descuento excesivo.");
+	}
+
+	@Test
+	public void testCalcularTotalVentaConVariasObrasSociales() {
+		// Crear varias Obras Sociales
+		ObraSocial obraSocial1 = new ObraSocial(1, "OSDE");
+		ObraSocial obraSocial2 = new ObraSocial(2, "Galeno");
+
+		// Crear productos cubiertos por ambas obras sociales
+		Producto medicamentoCubierto = new Producto(1, true, "Amoxicilina", 1000.0, null);
+		obraSocial1.getMedicamentosCubiertos().add(medicamentoCubierto);
+		obraSocial2.getMedicamentosCubiertos().add(medicamentoCubierto);
+
+		// Crear Cliente afiliado a la primera obra social
+		Cliente cliente = new Cliente(12345680, "Maggie", "Simpson", null, obraSocial1, "OSD123");
+
+		// Crear Venta con medicamento cubierto
+		Venta venta = new Venta(LocalDate.now(), null, "Efectivo", cliente, Arrays.asList(medicamentoCubierto), null);
+
+		// Calcular total de la venta
+		double totalEsperado = medicamentoCubierto.getPrecio() * 0.5; // 50% de descuento por ser cubierto
+		assertEquals(totalEsperado, venta.getTotalVenta(), 0.01,
+				"El total de la venta con obra social debería reflejar el descuento correspondiente.");
+	}
+
 }
