@@ -2,6 +2,8 @@ package com.grupo3.unla.model;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import com.grupo.unla.dto.SucursalDTO;
 import com.grupo3.unla.utils.MathHelper;
 
 public class Venta {
@@ -9,7 +11,7 @@ public class Venta {
 	public String ticket;
 	public Empleado empleado;
 	public Cliente cliente;
-	public Sucursal sucursal;
+	public SucursalDTO sucursal;
 	public String formaDePago;
 	public double total;
 	public List<Producto> productos;
@@ -17,15 +19,17 @@ public class Venta {
 	public static final int PORCENTAJE_IVA = 21;
 	
 	public Venta(LocalDate fecha, Empleado empleado, String formaDePago, Cliente cliente, List<Producto> productos, Sucursal sucursal) {
-		super();		
+		super();
+		SucursalDTO sucursalDTO = new SucursalDTO(sucursal);
+		
 		this.fecha = fecha;
 		this.empleado = empleado;
 		this.cliente = cliente;
 		this.formaDePago = formaDePago;
 		this.productos = productos;
 		this.total = getTotalVenta();
-		this.sucursal = sucursal;
-		this.ticket = MathHelper.generarNumeroTicket(sucursal);
+		this.sucursal = sucursalDTO;
+		this.ticket = MathHelper.generarNumeroTicket(sucursalDTO);
 	}
 	
 	public LocalDate getFecha() {
@@ -53,11 +57,11 @@ public class Venta {
 		this.cliente = cliente;
 	}
 
-	public Sucursal getSucursal() {
+	public SucursalDTO getSucursal() {
 		return sucursal;
 	}
 
-	public void setSucursal(Sucursal sucursal) {
+	public void setSucursal(SucursalDTO sucursal) {
 		this.sucursal = sucursal;
 	}
 
