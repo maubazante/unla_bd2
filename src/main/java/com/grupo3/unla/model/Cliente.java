@@ -127,4 +127,11 @@ public class Cliente {
 		return historialCompras.get(historialCompras.size() - 1);
 	}
 
+	@Override
+	public String toString() {
+		return "Cliente [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", domicilio=" + domicilio
+				+ ", obraSocial=" + obraSocial + ", nroAfiliado=" + nroAfiliado + ", historialCompras="
+				+ historialCompras + "]";
+	}
+
 }

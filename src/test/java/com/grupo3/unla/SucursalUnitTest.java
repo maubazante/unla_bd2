@@ -12,43 +12,56 @@ import org.junit.jupiter.api.Test;
 
 import com.grupo3.unla.model.Empleado;
 import com.grupo3.unla.model.Sucursal;
+import com.grupo3.unla.model.Venta;
 
 public class SucursalUnitTest {
 
-	private Sucursal sucursal;
-	private List<Empleado> empleadosMock;
+    private Sucursal sucursal;
+    private List<Empleado> empleadosMock;
+    private List<Venta> ventasMock;
 
-	@BeforeEach
-	public void setUp() {
-		empleadosMock = List.of(mock(Empleado.class), mock(Empleado.class));
-		sucursal = new Sucursal(1, "Sucursal 1", empleadosMock, empleadosMock.get(0));
-	}
+    @BeforeEach
+    public void setUp() {
+        empleadosMock = List.of(mock(Empleado.class), mock(Empleado.class));
+        ventasMock = List.of(mock(Venta.class), mock(Venta.class));
+        sucursal = new Sucursal(1, "Sucursal 1", empleadosMock, empleadosMock.get(0));
+    }
 
-	@Test
-	public void testCalcularVentasTotales() {
-		when(empleadosMock.get(0).getVentasRealizadas()).then(1000.0);
-		when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(2000.0);
-		assertEquals(3000.0, sucursal.calcularVentasTotales(), "Las ventas totales deberían ser 3000.0");
-	}
+    @Test
+    public void testCalcularVentasTotales() {
+        // Se mockean las ventas realizadas por cada empleado
+        when(ventasMock.get(0).getTotalVenta()).thenReturn(1000.0);
+        when(ventasMock.get(1).getTotalVenta()).thenReturn(2000.0);
+        
+        when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(0)));
+        when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(1)));
 
-	@Test
-	public void testContarEmpleadosActivos() {
-		when(empleadosMock.get(0)).thenReturn(true);
-		when(empleadosMock.get(1)).thenReturn(false);
-		assertEquals(1, sucursal.contarEmpleados(sucursal.getEmpleados()), "Debería haber 1 empleado activo.");
-	}
+        // Verificación de que la suma de ventas es correcta
+        assertEquals(3000.0, sucursal.calcularTotalVentasSucursal(), 
+            "Las ventas totales deberían ser 3000.0");
+    }
 
-	@Test
-	public void testPromedioVentasPorEmpleado() {
-		when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(1000.0);
-		when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(2000.0);
-		assertEquals(1500.0, sucursal.calcularPromedioVentasPorEmpleado(),
-				"El promedio de ventas por empleado debería ser 1500.0");
-	}
+    @Test
+    public void testPromedioVentasPorEmpleado() {
+        // Mockear las ventas realizadas por cada empleado
+        when(ventasMock.get(0).getTotalVenta()).thenReturn(1000.0);
+        when(ventasMock.get(1).getTotalVenta()).thenReturn(2000.0);
+        
+        when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(0)));
+        when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(1)));
 
-	@Test
-	public void testTieneEmpleadoEstrella() {
-		when(empleadosMock.get(0).esVendedorEstrella()).thenReturn(true);
-		assertTrue(sucursal.tieneEmpleadoEstrella(), "Debería haber un empleado estrella.");
-	}
+        // Verificación del promedio
+        assertEquals(1500.0, sucursal.calcularPromedioVentasPorEmpleado(),
+            "El promedio de ventas por empleado debería ser 1500.0");
+    }
+
+    @Test
+    public void testTieneEmpleadoEstrella() {
+        // Mockear que uno de los empleados es vendedor estrella
+        when(empleadosMock.get(0).esVendedorEstrella()).thenReturn(true);
+
+        // Verificación de que hay un empleado estrella
+        assertTrue(sucursal.tieneEmpleadoEstrella(), 
+            "Debería haber un empleado estrella.");
+    }
 }

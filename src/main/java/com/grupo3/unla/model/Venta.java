@@ -102,4 +102,11 @@ public class Venta {
 		}
 		return total;
 	}
+
+	@Override
+	public String toString() {
+		return "Venta [fecha=" + fecha + ", ticket=" + ticket + ", empleado=" + empleado + ", cliente=" + cliente
+				+ ", sucursal=" + sucursal + ", formaDePago=" + formaDePago + ", total=" + total + ", productos="
+				+ productos + "]";
+	}
 }

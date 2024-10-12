@@ -70,4 +70,9 @@ public class FormaDePago {
 	public boolean esFormaDePagoValida() {
 		return "Efectivo".equalsIgnoreCase(tipo) || "Tarjeta de Crédito".equalsIgnoreCase(tipo);
 	}
+
+	@Override
+	public String toString() {
+		return "FormaDePago [id=" + id + ", tipo=" + tipo + ", montoTotal=" + montoTotal + "]";
+	}
 }

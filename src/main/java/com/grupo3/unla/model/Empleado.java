@@ -161,4 +161,12 @@ public class Empleado {
 		return ventasRealizadas.size() > 50;
 	}
 
+	@Override
+	public String toString() {
+		return "Empleado [cuil=" + cuil + ", dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido
+				+ ", nroAfiliado=" + nroAfiliado + ", obraSocial=" + obraSocial + ", domicilio=" + domicilio
+				+ ", fechaIngreso=" + fechaIngreso + ", salarioBase=" + salarioBase + ", ventasRealizadas="
+				+ ventasRealizadas + "]";
+	}
+
 }

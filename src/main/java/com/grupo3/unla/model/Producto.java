@@ -69,4 +69,10 @@ public class Producto {
 	public boolean esGenerico() {
 	    return this.descripcion.toLowerCase().contains("genérico");
 	}
+
+	@Override
+	public String toString() {
+		return "Producto [codigo=" + codigo + ", isMedicamento=" + isMedicamento + ", descripcion=" + descripcion
+				+ ", precio=" + precio + ", laboratorio=" + laboratorio + "]";
+	}
 }

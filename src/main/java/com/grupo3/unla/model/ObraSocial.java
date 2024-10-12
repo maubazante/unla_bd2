@@ -78,4 +78,10 @@ public class ObraSocial {
 		}
 		return false;
 	}
+
+	@Override
+	public String toString() {
+		return "ObraSocial [id=" + id + ", nombre=" + nombre + ", afiliados=" + afiliados + ", medicamentosCubiertos="
+				+ medicamentosCubiertos + "]";
+	}
 }

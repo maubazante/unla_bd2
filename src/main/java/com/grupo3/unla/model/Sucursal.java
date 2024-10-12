@@ -84,4 +84,10 @@ public class Sucursal {
 		return false;
 	}
 
+	@Override
+	public String toString() {
+		return "Sucursal [id=" + id + ", nombre=" + nombre + ", empleados=" + empleados + ", encargado=" + encargado
+				+ "]";
+	}
+
 }

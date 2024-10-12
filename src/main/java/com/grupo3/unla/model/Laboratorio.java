@@ -68,4 +68,9 @@ public class Laboratorio {
 		}
 		return false;
 	}
+
+	@Override
+	public String toString() {
+		return "Laboratorio [id=" + id + ", nombre=" + nombre + ", productos=" + productos + "]";
+	}
 }

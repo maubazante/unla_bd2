@@ -63,4 +63,10 @@ public class Domicilio {
 	    }
 	    return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Domicilio [id=" + id + ", altura=" + altura + ", calle=" + calle + ", localidad=" + localidad
+				+ ", provincia=" + provincia + "]";
+	}
 }
