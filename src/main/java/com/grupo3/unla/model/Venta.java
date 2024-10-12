@@ -85,11 +85,21 @@ public class Venta {
 		this.productos = productos;
 	}
 
+	public String getFormaDePago() {
+		return formaDePago;
+	}
+
+	public void setFormaDePago(String formaDePago) {
+		this.formaDePago = formaDePago;
+	}
+
 	public void agregarProducto(Producto producto) {
-		if (this.productos != null) {
+		if (producto != null && this.productos != null) {
 			this.productos.add(producto);
 			this.total = getTotalVenta(); // Recalcular el total después de agregar
 			System.out.println("Producto agregado: " + producto.getDescripcion());
+		} else {
+			System.out.println("No se puede agregar un producto nulo.");
 		}
 	}
 
@@ -113,8 +123,8 @@ public class Venta {
 		float total = 0;
 		if (this.productos == null)
 			return total;
-		for (Producto prodIt : this.productos) {
-			total += prodIt.getPrecio();
+		for (Producto producto : productos) {
+			total += producto.getPrecio();
 		}
 		return total;
 	}

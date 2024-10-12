@@ -64,13 +64,16 @@ public class Sucursal {
 	public double calcularTotalVentasSucursal() {
 		double total = 0;
 		for (Empleado empleado : empleados) {
-			for (Venta venta : empleado.getVentasRealizadas()) {
-				total += venta.getTotalVenta();
+			List<Venta> ventas = empleado.getVentasRealizadas();
+			if (ventas != null) {
+				for (Venta venta : ventas) {
+					total += venta.getTotalVenta();
+				}
 			}
 		}
-
 		return total;
 	}
+
 
 	public double calcularPromedioVentasPorEmpleado() {
 		if (empleados.isEmpty()) {

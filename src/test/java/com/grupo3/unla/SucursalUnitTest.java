@@ -82,4 +82,53 @@ public class SucursalUnitTest {
 		assertTrue(!sucursal.tieneEmpleadoEstrella(), "No debería haber un empleado estrella.");
 	}
 
+	@Test
+	public void testPromedioVentasPorEmpleadoSinVentas() {
+		when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of());
+		when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of());
+
+		assertEquals(0.0, sucursal.calcularPromedioVentasPorEmpleado(),
+				"El promedio de ventas por empleado debería ser 0.0 cuando no hay ventas.");
+	}
+
+	@Test
+	public void testCalcularTotalVentasSucursalConUnEmpleado() {
+		sucursal = new Sucursal(1, "Sucursal 1", List.of(mock(Empleado.class)), mock(Empleado.class));
+		when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of(mock(Venta.class)));
+
+		when(ventasMock.get(0).getTotalVenta()).thenReturn(500.0);
+		assertEquals(500.0, sucursal.calcularTotalVentasSucursal(),
+				"Las ventas totales deberían ser 500.0 con un solo empleado.");
+	}
+
+	@Test
+	public void testCalcularTotalVentasSucursalConVentasNulas() {
+		when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(null);
+		when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of());
+
+		assertEquals(0.0, sucursal.calcularTotalVentasSucursal(),
+				"Las ventas totales deberían ser 0.0 si las ventas son nulas o vacías.");
+	}
+
+
+	@Test
+	public void testTieneEmpleadoEstrellaConVariosEstrellas() {
+		when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of(mock(Venta.class))); // 1 venta
+		when(empleadosMock.get(1).getVentasRealizadas())
+				.thenReturn(List.of(mock(Venta.class), mock(Venta.class), mock(Venta.class))); // 3 ventas
+
+		// Establecer que el segundo empleado es estrella
+		when(empleadosMock.get(1).esVendedorEstrella()).thenReturn(true);
+
+		assertTrue(sucursal.tieneEmpleadoEstrella(), "Debería haber al menos un empleado estrella.");
+	}
+
+	@Test
+	public void testContarEmpleadosConListaVacia() {
+		sucursal = new Sucursal(1, "Sucursal 1", List.of(), mock(Empleado.class));
+
+		assertEquals(0, sucursal.contarEmpleados(sucursal.getEmpleados()),
+				"El número de empleados debería ser 0 cuando la lista está vacía.");
+	}
+
 }
