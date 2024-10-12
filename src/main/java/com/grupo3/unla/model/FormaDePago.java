@@ -5,6 +5,10 @@ public class FormaDePago {
 	public String tipo;
 	private double montoTotal;
 
+	public FormaDePago() {
+		super();
+	}
+
 	public FormaDePago(int id, String tipo) {
 		super();
 		this.id = id;

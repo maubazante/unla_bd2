@@ -8,6 +8,10 @@ public class Laboratorio {
 	public String nombre;
 	private List<Producto> productos = new ArrayList<>();
 
+	public Laboratorio() {
+		super();
+	}
+
 	public Laboratorio(int id, String nombre) {
 		super();
 		this.id = id;
@@ -28,6 +32,10 @@ public class Laboratorio {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public List<Producto> getProductos() {
+		return productos;
 	}
 
 	public double calcularIngresos(List<Producto> productosVendidos) {
