@@ -41,6 +41,7 @@ public class Empleado {
 		this.nroAfiliado = nroAfiliado;
 		this.obraSocial = obraSocial;
 		this.domicilio = domicilio;
+		this.fechaIngreso = LocalDate.now();
 	}
 
 	public long getCuil() {
