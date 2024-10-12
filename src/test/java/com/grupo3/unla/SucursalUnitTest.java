@@ -29,39 +29,57 @@ public class SucursalUnitTest {
 
     @Test
     public void testCalcularVentasTotales() {
-        // Se mockean las ventas realizadas por cada empleado
         when(ventasMock.get(0).getTotalVenta()).thenReturn(1000.0);
         when(ventasMock.get(1).getTotalVenta()).thenReturn(2000.0);
         
         when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(0)));
         when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(1)));
 
-        // Verificación de que la suma de ventas es correcta
         assertEquals(3000.0, sucursal.calcularTotalVentasSucursal(), 
             "Las ventas totales deberían ser 3000.0");
     }
 
     @Test
     public void testPromedioVentasPorEmpleado() {
-        // Mockear las ventas realizadas por cada empleado
         when(ventasMock.get(0).getTotalVenta()).thenReturn(1000.0);
         when(ventasMock.get(1).getTotalVenta()).thenReturn(2000.0);
         
         when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(0)));
         when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of(ventasMock.get(1)));
 
-        // Verificación del promedio
         assertEquals(1500.0, sucursal.calcularPromedioVentasPorEmpleado(),
             "El promedio de ventas por empleado debería ser 1500.0");
     }
 
     @Test
     public void testTieneEmpleadoEstrella() {
-        // Mockear que uno de los empleados es vendedor estrella
         when(empleadosMock.get(0).esVendedorEstrella()).thenReturn(true);
 
-        // Verificación de que hay un empleado estrella
         assertTrue(sucursal.tieneEmpleadoEstrella(), 
             "Debería haber un empleado estrella.");
     }
+
+	@Test
+	public void testContarEmpleados() {
+		assertEquals(2, sucursal.contarEmpleados(sucursal.getEmpleados()), "El número de empleados debería ser 2");
+	}
+
+	@Test
+	public void testCalcularTotalVentasSucursalSinVentas() {
+		when(empleadosMock.get(0).getVentasRealizadas()).thenReturn(List.of());
+		when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of());
+
+		// Verificación de que el total de ventas es 0
+		assertEquals(0.0, sucursal.calcularTotalVentasSucursal(), "Las ventas totales deberían ser 0.0");
+	}
+
+	@Test
+	public void testTieneEmpleadoEstrellaSinEstrella() {
+		when(empleadosMock.get(0).getVentasRealizadas())
+				.thenReturn(List.of(mock(Venta.class), mock(Venta.class), mock(Venta.class))); // 3 ventas
+		when(empleadosMock.get(1).getVentasRealizadas()).thenReturn(List.of(mock(Venta.class))); // 1 venta
+
+		assertTrue(!sucursal.tieneEmpleadoEstrella(), "No debería haber un empleado estrella.");
+	}
+
 }
