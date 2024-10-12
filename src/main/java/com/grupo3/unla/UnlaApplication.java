@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.grupo3.unla.model.Cliente;
 import com.grupo3.unla.model.Domicilio;
@@ -14,6 +16,7 @@ import com.grupo3.unla.model.Producto;
 import com.grupo3.unla.model.Sucursal;
 import com.grupo3.unla.model.Venta;
 
+@SpringBootApplication
 public class UnlaApplication {
 
 	public static final String PAGO_EFECTIVO = "EFECTIVO";
@@ -21,6 +24,7 @@ public class UnlaApplication {
 	public static final String PAGO_CREDITO = "CREDITO";
 
 	public static void main(String[] args) {
+		SpringApplication.run(UnlaApplication.class, args);
 
 		// GENERAR CLIENTES
 		Cliente cliente_1 = new Cliente(11111111, "JUAN", "ROMAN",
